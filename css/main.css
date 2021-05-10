@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+/* use image of dumplings and color the background with color code */
+.hero-bg {
+  background: #FAC131 url('../images/bg-plate.jpg');
+  color: black;
+  text-align: center;
+  padding-bottom: 4em;
+}
+/* for padding in margin values use the 'em' unit that pushes negative space to empty designs. I want to be able to see some of the yellow portion of the picture */
+
+/* push away 1em units on the top and bottom */
+header {
+  padding: 1em 0;
+}
+
+/* reference both class and element selector to change links to white, remove underline, bold the text*/
+.hero-bg a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* zero on the top and 1 on the bottom to push over element*/
+section {
+  margin: 0 1em;
+}
+
+h1 {
+  font-size:  2.5rem;
+  margin: 2em 0 1.2em;
+}
+
+h1 span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* use pseudo-classes to change interaction of selected element and create custom underline */
+h1 span::before {
+  content: ' ';
+  position: absolute;
+  width: 3em;
+  background: #FAC131;
+  height: .4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -.3em;
+}
+
+/* any paragraph elements inside of the parent container */
+.hero-bg p {
+  font-weight: bold;
+  margin: 0 1em 3em;
+}
+
+/* need to fix padding (whitespace within the element) */
+.form-container {
+  background-color: white;
+  margin: 2em -1em 0;
+  padding: 2em;
+}
