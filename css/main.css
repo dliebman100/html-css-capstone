@@ -9,6 +9,7 @@ body#home {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
+
 /* use image of dumplings and color the background with color code */
 .hero-bg {
   background: #e2231c url('../images/taiwanese-soup.jpg');
@@ -20,7 +21,7 @@ body#home {
 /* for padding in margin values use the 'em' unit that pushes negative space to empty designs. I want to be able to see some of the yellow portion of the picture */
 
 /* push away 1em units on the top and bottom */
-header {
+.headerLogin {
   padding: 1em 0;
 }
 
@@ -222,37 +223,88 @@ p {
 }
 .footer h3 {
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-left: ;
 }
 .footer-col-1, .footer-col-2, .footer-col-3 {
   min-width: 250px;
   margin-bottom: 20px;
 }
 
-
-/*---------LOGIN PAGE---------*/
-body#login {
-  background-color:#012675;
-  font-size:14px;
-  color:#fff;
+/*-----MENU NAVIGATION ---*/
+/* body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border box;
+  overflow: hidden;
+} */
+/* .push {
+  margin-left: auto;
 }
-.simple-login-container{
-  width: 300px;
-  max-width:100%;
-  margin: 50px auto;
+.nav-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #751525;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
-.simple-login-container h2{
-  text-align: center;
-  font-size:20px;
+.nav-list ul{
+  display: flex;
+  list-style: none;
+  font-size: 3em;
+  margin: 0;
+  
 }
-.simple-login-container .btn-login{
-  background-color:#FF5964;
-  color:#fff;
+.nav-list li {
+  padding: 10px;
+  margin: -10px 8px;
+  padding: 7px 20px;
 }
-a{
-  color:#fff;
-} 
-
-/*---------CONTACT PAGE---------*/
-
-/*---------SERVICES PAGE---------*/
+.nav-list li:hover {
+  border: 1px #857240 solid;
+  background-color: #485861;
+} */
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  cursor: pointer;
+  top: 0%;
+}
+.nav-list {
+  display: flex;
+  width: 0%;
+  background-color: black;
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  color: red;
+}
+.right-nav {
+  width: 50%;
+  text-align: right;
+  padding-right: 20px;
+}
+/* button {
+  background-color: #751525;
+  border: none;
+  box-shadow: 10px 0px 50px 0px #ccc;
+  color: white;
+  width: 70px;
+  height: 60px;
+}  */

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*---------PRODUCTS PAGE---------*/
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;  
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+}
+#header {
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  z-index: 1000;
+
+.logo{
+  img{
+    height: 5rem;
+      }
+    }
+  nav{
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+
+        li {
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
