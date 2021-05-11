@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/*PROPERTY DECLARATION INDEX.html*/
+/*---------INDEX.html---------*/
 :root {
   --leading: 2em;
 }
 
-body {
+body#home {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
@@ -210,20 +210,39 @@ p {
   background-color: white;
   padding: .2em 0;
 }
+.footer {
+  background: rgb(70, 68, 68);
+  font-weight: bold;
+  color: #0c0b0b;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
 
-/* LOGIN PAGE */
-body.someClass {
-  background-color:#5286F3;
+
+/*---------LOGIN PAGE---------*/
+body#login {
+  background-color:#012675;
   font-size:14px;
   color:#fff;
 }
 .simple-login-container{
-  width:300px;
+  width: 300px;
   max-width:100%;
-  margin:50px auto;
+  margin: 50px auto;
 }
 .simple-login-container h2{
-  text-align:center;
+  text-align: center;
   font-size:20px;
 }
 .simple-login-container .btn-login{
@@ -234,4 +253,6 @@ a{
   color:#fff;
 } 
 
-/*CONTACT PAGE */
+/*---------CONTACT PAGE---------*/
+
+/*---------SERVICES PAGE---------*/

@@ -5,31 +5,59 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-
-  <h1>Get in touch if there are any questions</h1>
-  <p>We're here for you!</p>
-
-  <hr>
-  <h1>Around 24/7 every day of the year</h1>
-  <p>Drive to my house at night and wake me up with a suprise birthday cake</p>
-
-  <hr>
-  <h1>Point of Contact</h1>
-  <p>Daniel Liebman</p>
-  <p>(555) 555-5555</p>
-  <p>fake_email@gmail.com</p>
-  <hr>
-
-  <h1>Contact Form</h1>
-  <a href="login.html" target="_blank">
-  <p>Please fill out this form</p>
-  </a>
-  <hr>
-
-  <h1>Take Me Home</h1>
-  <p>
-    <a href="index.html">Home</a>
-  </p>
-
+  <section class="mb-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly.</p>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form"></form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-3">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><p>New York, NY 10001, USA</p>
+                </li>
+                <li><p>+1 555 5555</p>
+                </li>
+                <li><p>contact@email.com</p> 
+                </li>
+            </ul>
+        </div>
+    </div>
+  </section>
 </body>
 </html>
