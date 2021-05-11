@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/*PROPERTY DECLARATION*/
+:root {
+  --leading: 2em;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 /* use image of dumplings and color the background with color code */
 .hero-bg {
-  background: #FAC131 url('../images/bg-plate.jpg');
+  background: #e2231c url('../images/taiwanese-soup.jpg');
+  background-position: 1% 15%;
   color: black;
   text-align: center;
-  padding-bottom: 4em;
+  padding-bottom: 5em;
 }
 /* for padding in margin values use the 'em' unit that pushes negative space to empty designs. I want to be able to see some of the yellow portion of the picture */
 
@@ -48,14 +54,28 @@ h1 span {
 h1 span::before {
   content: ' ';
   position: absolute;
-  width: 3em;
-  background: #FAC131;
+  width: 10em;
+  background: #7a4e4b;
   height: .4em;
   bottom: 0;
   z-index: -1;
   margin-left: -.3em;
 }
 
+h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+h2 span::before {
+  content: ' ';
+  position: absolute;
+  width: 3em;
+  background: #e2231c;
+  height: .4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -.3em;
+}
 /* any paragraph elements inside of the parent container */
 .hero-bg p {
   font-weight: bold;
@@ -68,3 +88,148 @@ h1 span::before {
   margin: 2em -1em 0;
   padding: 2em;
 }
+.form-container p {
+  color: gray;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+  font-size: .9em;
+  margin-top: .3em;
+}
+
+label {
+  color: #e2231c;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+/* change borders to either dashed and round corners with border-radius */
+input[type="text"] {
+  border: 1px solid #707070;
+  border-radius: .5em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  margin-top: 1.2em;
+} 
+input[type="button"] {
+  background-color: #e2231c;
+  border: none;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 1em 0;
+  border-radius: .5em;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+input[type="button"]:hover {
+  background-color: #0c0c0c;
+  font-weight: normal;
+}
+
+.authentic {
+  margin: 0;
+}
+
+.right-column {
+  text-align: center;
+  margin: 3em 1em;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: var(--leading);
+}
+
+@media (min-width: 730px) {
+  section {
+    margin: 0 4em;
+  }
+  .form-container {
+    margin: 2em -4em 0;
+  }
+}
+@media (min-width: 930px) {
+  .hero-bg {
+    text-align: left;
+  }
+  .hero-bg p {
+    margin: 0 0 3em;
+  }
+  .hero-bg section {
+    width: 65%;
+  }
+  .form-container {
+    margin: 2em 0 0;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 3);
+  }
+  form {
+    display: flex;
+  }
+  .form-left {
+    width: 70%;
+  }
+  label {
+    margin: 0;
+  }
+  input[type="button"] {
+    height: fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 2.2em;
+    padding: .7em 0;
+    width: 30%;
+  }
+  .hero-bg p {
+    margin-bottom: 0;
+  }
+  section.authentic {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+        "dumpling content";
+  }
+  .right-column {
+    grid-area: content;
+    padding: 0 10%;
+    text-align: left;
+    align-self: center;
+  }
+  img {
+    grid-area: dumpling;
+  }
+}
+.pageFooter {
+  background-color: white;
+  padding: .2em 0;
+}
+
+/* LOGIN PAGE */
+body.someClass {
+  background-color:#5286F3;
+  font-size:14px;
+  color:#fff;
+}
+.simple-login-container{
+  width:300px;
+  max-width:100%;
+  margin:50px auto;
+}
+.simple-login-container h2{
+  text-align:center;
+  font-size:20px;
+}
+.simple-login-container .btn-login{
+  background-color:#FF5964;
+  color:#fff;
+}
+a{
+  color:#fff;
+} 
