@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/*PROPERTY DECLARATION*/
+/*PROPERTY DECLARATION INDEX.html*/
 :root {
   --leading: 2em;
 }
@@ -233,3 +233,5 @@ body.someClass {
 a{
   color:#fff;
 } 
+
+/*CONTACT PAGE */
