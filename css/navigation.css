@@ -9,7 +9,7 @@
   align-items: center;
 }
 .navbar {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,14 +36,7 @@
 }
 .right-nav {
   width: 50%;
-
   text-align: right;
   padding-right: 20px;
 }
-#Search {
-  padding: 5px;
-  font-size: 18px;
-  border: 2px solid steelblue;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
