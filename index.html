@@ -1,78 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Simple.Eats</title>
+  <meta charset="UTF-8">
+  <title>Testing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="navigation-bar.html">
 </head>
-<body id="home">
-  <!-- LANDING -->
-        <nav class="navbar background">
+
+<body>
+<!-- Navbar -->
+    <header>
+      <nav>
+        <div class="navbar-background">
           <ul class="nav-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li class="push"><a href="contact.html">Contact</a></li>
-            </ul>
-          <div class="right-nav">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="products.html">Prodcuts</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Registration</a></li>
+          </ul>
         </div>
       </nav>
-  <div class="hero-bg">
-    <section class="topPage">
-      <header class="headerLogin">
-      </header>
-      <h1>Simple.Eats</h1>
-      <h1><span>A Better Eating Experience</span> Not Just Expensive Lean Cuisine</h1>
-
-      <p>Simple.Eats is a meal kit delivery service that specializes in themed cuisines that are rotated on a weekly basis.</p>
-      <div class="form-container">
-        <form action="">
-          <div class="form-left">
-            <label for="login">Enter your email to sign up!</label>
-            <input type="text" name="fullname" id="fullname">
-            <p>Example: "contact@email.com"</p>
+<!-- Hero page -->
+      <div class="hero-bg">
+        <h1>We are Simple.Eats<br> A better eating experience.</h1>
+        <a class="btn-full" href="#">I'm hungry</a>
+        <a class="btn-ghost" href="contact.html">Sign me up</a>
+      </div>  
+    </header>
+<!-- Second picture -->
+    <section class="authentic">
+      <div class="right-column">
+        <!-- <h2>Authentic. Local. Always Fresh.</h2>
+        <p>Portions are scaled to family size because we know you're hungry.</p>
+        <p>Includes instructions for leftovers and other recipes.</p>
+        <p>Plan your menu function that can be used to quickly check out food.</p> -->
+      </div>
+    </section>
+<!-- Features -->
+    <section id="features">
+      <div class="row">
+        <h2>Features</h2>
+        <p class="long-desc">Hello, we are Simple.Eats, a mealkit delivery service. We know you’re always busy. So let us take care of that!</p>
+      </div>  
+      <div class="row">
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icons" name="calendar"></ion-icon>
+          <h4>Up to 365 days/year</h4>
+            <p>Never cook again! We really mean that. Our plans include up to 365 days/year coverage. Cancel anytime!</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icons" name="leaf"></ion-icon>
+          <h4>Sourced Locally</h4>
+          <p>All our vegetables are coming from local restaurants in the area that you live. We strive to maintain sustainable practices and work vendors that follow those guidelines.</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icons" name="cart"></ion-icon>
+          <h4>Order anything</h4>
+          <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 3 delicious meals!</p>
+        </div>
+      </div>
+    </section>
+<!-- Meals Gallery -->
+    <section id="meals">
+      <ul class="meal-gallery"> 
+        <li class="picbox">
+          <img src="images/mussels.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/tuna.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/riblets.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/crabby.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/Xiao-Long-Bao.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/orange chicken.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/riblets.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/taiwanese-soup.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/orange chicken.jpg">
+        </li>
+        <li class="picbox">
+          <img src="images/riblets.jpg">
+        </li>
+      </ul>
+    </section>
+<!-- How it Works -->
+    <section id="how-it-works">
+      <div class="row">
+        <h2>How it Works</h2>    
+      </div>      
+      <div class="row">
+        <div class="col span-1-of-2">
+          <img src="images/stock-android-with-logo.jpg">
+        </div>
+        <div class="col span-1-of-2">
+          <div class="steps">
+            <div>1</div>
+            <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+            <div>2</div>
+            <p>Order your delicious meal using our mobile app or website.</p>
+            <div>3</div>
+            <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+          </div>      
+        </div>
+      </div>
+<!-- Testimonials -->
+    </section>
+    <section id="testimonials">
+      <div class="row">
+        <h2>Customer testimonials</h2>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <p>This is just awesome! Simple.Eats meals are authentic, delicious, and perfect for me. Nothing comes close to how tasty these dishes are.</p>
+          <div class="testimonial">
+            <img class="user" src="images/dana_wyatt.png">
+            <h6>Dana Wyatt</h6>
           </div>
-          <input type="button" value="Click to Submit" id="cta-btn">
+        </div>
+        <div class="col span-1-of-3">
+          <blockquote>Inexpensive, healthy and great-tasting meals, I cannot recommend this enough.
+          <cite class="testimonial">
+            <img class="user" src="images/dana_lopez.png">
+            <h6>Dana Lopez</h6>
+          </cite>
+          </blockquote>
+        </div>
+        <div class="col span-1-of-3">
+          <p>I was looking for a quick and easy food delivery service in the area I'm in. I tried a lot of them and ended up with Simple.Eats. Keep up the great work!
+          </p>
+          <div class="testimonial">
+            <img class="user" src="images/jason-r.jpg">
+            <h6>Jason Rosario</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Contact us form -->
+    <section class="section-form">
+      <div class="row">
+        <h2>We want to hear from you!</h2>
+      </div>
+      <div class="row">
+        <form action="#" method="post" class="contact-form">
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="name">Name</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="text" name="name" id="name" placeholder="Your name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="email">Email</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="find-us">How did you find us?</label>
+            </div>
+            <div class="col span-2-of-3">
+              <select name="find-us" id="find-us">
+                <option value="friends" selected>Friends</option>
+                <option value="search">Google</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="message">Message</label>
+            </div>
+            <div class="col span-2-of-3">
+              <textarea name="message" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label>&nbsp;</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="submit" value="Send">
+            </div>
+          </div>
         </form>
       </div>
     </section>
-  </div>  
-  <section class="authentic">
-    <div class="right-column">
-      <h2>Authentic. Local. Always Fresh.</h2>
-      <p>Portions are scaled to family size because we know you're hungry.</p>
-      <p>Includes instructions for leftovers and other recipes.</p>
-      <p>Plan your menu function that can be used to quickly check out food.</p>
-    </div>
-    <img src="images/soy-sauce-chicken.jpg" alt="Picture of soy sauce chicken">
-  </section>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <div class="foot-container">
-      <div class="row">
-        <div class="footer-col-1">
-          <h3>Download our App</h3>
-          <p>Download App for Android and iOS mobile devices</p>
-        </div>
-        <div class="footer-col-2">
-          <img src="images/bg-plate.jpg" alt="big plat">
-          <p>Our purpose is to sustainably serve delicious food in an affordable way.<p>
-        </div>
-        <div class="footer-col-3">
-          <h3>Useful Links</h3>
-          <ul>
-            <li>Coupons</li>
-            <li>Blog</li>
-            <li>Return Policy</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="pageFooter">
-    <p>&copy; Simple.Eats, 2021</p>
-  </footer>
-
-  </script>
-</body>
+  </body>
 </html>
+
+<!-- ICONS -->
+<script src="https://unpkg.com/ionicons@4.0.0/dist/ionicons.js"></script>

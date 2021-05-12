@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*---------INDEX.html---------*/
+:root {
+  --leading: 2em;
+}
+
+body#home {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* use image of dumplings and color the background with color code */
+.hero-bg {
+  background: #e2231c url('../images/taiwanese-soup.jpg');
+  background-position: 1% 15%;
+  color: black;
+  text-align: center;
+  padding-bottom: 5em;
+}
+/* for padding in margin values use the 'em' unit that pushes negative space to empty designs. I want to be able to see some of the yellow portion of the picture */
+
+/* push away 1em units on the top and bottom */
+.headerLogin {
+  padding: 1em 0;
+}
+
+/* reference both class and element selector to change links to white, remove underline, bold the text*/
+.hero-bg a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* zero on the top and 1 on the bottom to push over element*/
+section {
+  margin: 0 1em;
+}
+
+h1 {
+  font-size:  2.5rem;
+  margin: 2em 0 1.2em;
+}
+
+h1 span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* use pseudo-classes to change interaction of selected element and create custom underline */
+h1 span::before {
+  content: ' ';
+  position: absolute;
+  width: 10em;
+  background: #7a4e4b;
+  height: .4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -.3em;
+}
+
+h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+h2 span::before {
+  content: ' ';
+  position: absolute;
+  width: 3em;
+  background: #e2231c;
+  height: .4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -.3em;
+}
+/* any paragraph elements inside of the parent container */
+.hero-bg p {
+  font-weight: bold;
+  margin: 0 1em 3em;
+}
+
+/* need to fix padding (whitespace within the element) */
+.form-container {
+  background-color: white;
+  margin: 2em -1em 0;
+  padding: 2em;
+}
+.form-container p {
+  color: gray;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+  font-size: .9em;
+  margin-top: .3em;
+}
+
+label {
+  color: #e2231c;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+/* change borders to either dashed and round corners with border-radius */
+input[type="text"] {
+  border: 1px solid #707070;
+  border-radius: .5em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  margin-top: 1.2em;
+} 
+input[type="button"] {
+  background-color: #e2231c;
+  border: none;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 1em 0;
+  border-radius: .5em;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+input[type="button"]:hover {
+  background-color: #0c0c0c;
+  font-weight: normal;
+}
+
+.authentic {
+  margin: 0;
+}
+
+.right-column {
+  text-align: center;
+  margin: 3em 1em;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: var(--leading);
+}
+
+@media (min-width: 730px) {
+  section {
+    margin: 0 4em;
+  }
+  .form-container {
+    margin: 2em -4em 0;
+  }
+}
+@media (min-width: 930px) {
+  .hero-bg {
+    text-align: left;
+  }
+  .hero-bg p {
+    margin: 0 0 3em;
+  }
+  .hero-bg section {
+    width: 65%;
+  }
+  .form-container {
+    margin: 2em 0 0;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 3);
+  }
+  form {
+    display: flex;
+  }
+  .form-left {
+    width: 70%;
+  }
+  label {
+    margin: 0;
+  }
+  input[type="button"] {
+    height: fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 2.2em;
+    padding: .7em 0;
+    width: 30%;
+  }
+  .hero-bg p {
+    margin-bottom: 0;
+  }
+  section.authentic {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+        "dumpling content";
+  }
+  .right-column {
+    grid-area: content;
+    padding: 0 10%;
+    text-align: left;
+    align-self: center;
+  }
+  img {
+    grid-area: dumpling;
+  }
+}
+.pageFooter {
+  background-color: white;
+  padding: .2em 0;
+}
+.footer {
+  background: rgb(70, 68, 68);
+  font-weight: bold;
+  color: #0c0b0b;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  margin-left: ;
+}
+.footer-col-1, .footer-col-2, .footer-col-3 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+/*-----MENU NAVIGATION ---*/
+/* body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border box;
+  overflow: hidden;
+} */
+/* .push {
+  margin-left: auto;
+}
+.nav-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #751525;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list ul{
+  display: flex;
+  list-style: none;
+  font-size: 3em;
+  margin: 0;
+  
+}
+.nav-list li {
+  padding: 10px;
+  margin: -10px 8px;
+  padding: 7px 20px;
+}
+.nav-list li:hover {
+  border: 1px #857240 solid;
+  background-color: #485861;
+} */
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  cursor: pointer;
+  top: 0%;
+}
+.nav-list {
+  display: flex;
+  width: 0%;
+  background-color: black;
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  color: red;
+}
+.right-nav {
+  width: 50%;
+  text-align: right;
+  padding-right: 20px;
+}
+/* button {
+  background-color: #751525;
+  border: none;
+  box-shadow: 10px 0px 50px 0px #ccc;
+  color: white;
+  width: 70px;
+  height: 60px;
+}  */
