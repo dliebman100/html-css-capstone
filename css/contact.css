@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /*---------CONTACT PAGE---------*/
-body#contact {
+#contact {
   background-color: #32469c;
   color: white;
+}
+body{
+  background: url(https://i.ibb.co/Zgzv34L/colorful-2174045.png;);
+  font-family: 'Montserrat';
+  height: 100vh;
+  width: 100vw;
+  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/noodle-soup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }

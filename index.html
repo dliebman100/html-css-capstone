@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Testing</title>
+  <title>Simple.Eats</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
@@ -13,13 +13,13 @@
 <!-- Navbar -->
     <header>
       <nav>
-        <div class="navbar-background">
+        <div class="nav-bg">
           <ul class="nav-list">
-            <li><a href="main.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Prodcuts</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Registration</a></li>
+            <li><a href="registration.html">Registration</a></li>
           </ul>
         </div>
       </nav>
@@ -27,39 +27,38 @@
       <div class="hero-bg">
         <h1>We are Simple.Eats<br> A better eating experience.</h1>
         <a class="btn-full" href="#">I'm hungry</a>
-        <a class="btn-ghost" href="contact.html">Sign me up</a>
+        <a class="btn-ghost" href="registration.html">Sign me up</a>
       </div>  
     </header>
 <!-- Second picture -->
-    <section class="authentic">
-      <div class="right-column">
-        <!-- <h2>Authentic. Local. Always Fresh.</h2>
-        <p>Portions are scaled to family size because we know you're hungry.</p>
-        <p>Includes instructions for leftovers and other recipes.</p>
-        <p>Plan your menu function that can be used to quickly check out food.</p> -->
+    <section id="intro">
+      <div class="intro-hello">
+        <h1>We know you’re always busy. So let us take care of that!</h1>
       </div>
     </section>
 <!-- Features -->
     <section id="features">
       <div class="row">
         <h2>Features</h2>
-        <p class="long-desc">Hello, we are Simple.Eats, a mealkit delivery service. We know you’re always busy. So let us take care of that!</p>
       </div>  
       <div class="row">
         <div class="col span-1-of-4 box">
-          <ion-icon class="icons" name="calendar"></ion-icon>
-          <h4>Up to 365 days/year</h4>
-            <p>Never cook again! We really mean that. Our plans include up to 365 days/year coverage. Cancel anytime!</p>
+          <img src="images/plate-pic.png" alt="knife and fork plate">
+          <!-- <ion-icon class="icons" name="calendar"></ion-icon> -->
+          <h4>Choose Your Favorite</h4>
+            <p>Choose your favorite meals and order online or by phone. It's easy to customize your order</p>
         </div>
         <div class="col span-1-of-4 box">
-          <ion-icon class="icons" name="leaf"></ion-icon>
+          <img src="images/bowl-pic.png" alt="picture of bowl">
+          <!-- <ion-icon class="icons" name="leaf"></ion-icon> -->
           <h4>Sourced Locally</h4>
           <p>All our vegetables are coming from local restaurants in the area that you live. We strive to maintain sustainable practices and work vendors that follow those guidelines.</p>
         </div>
         <div class="col span-1-of-4 box">
-          <ion-icon class="icons" name="cart"></ion-icon>
-          <h4>Order anything</h4>
-          <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 3 delicious meals!</p>
+          <img src="images/moto-pic.png" alt="">
+          <!-- <ion-icon class="icons" name="cart"></ion-icon> -->
+          <h4>We Deliver Your Meals</h4>
+          <p>We prepare and deliver your meals on time.</p>
         </div>
       </div>
     </section>
@@ -209,5 +208,4 @@
   </body>
 </html>
 
-<!-- ICONS -->
-<script src="https://unpkg.com/ionicons@4.0.0/dist/ionicons.js"></script>
+

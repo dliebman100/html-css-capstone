@@ -1,149 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-   <link rel="stylesheet" href="css/products.css">
-   <link rel="stylesheet" href="css/navigation.css">
-  <title>Products</title>
+	<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Food menu</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="css/products.css">
+		<link rel="stylesheet" href="css/navigation.css">
 </head>
 <body>
-  <nav class="navbar background">
-    <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li class="push"><a href="contact.html">Contact</a></li>
-      </ul>
-    <div class="right-nav">
-  </div>
-</nav>
-  <div class="container-fluid">
-    <div id="fda_app" class="row">
-      <!-- Start Section Header Bar -->
-      <section id="fda_side_bar">
-        <div class="menu_icon">
-          <i class="fa fa-bars"></i>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>American</li>
-            <li>Spanish</li>
-            <li class="active">Chinese</li>
-          </ul>
-        </div>
-        <div class="menu_filter">
-          <i class="fa fa-bar-chart"></i>
-        </div>
-      </section>
-      <!-- End Section Header Bar -->
-  
-      <!-- Start Section Header Bar -->
-      <section id="fda_header_bar" class="col-12">
-        <div class="row">
-          <div class="col-12">
-            <span>Order</span>&nbsp;Fresh Food
-          </div>
-        </div>
-        <div class="row fda_search_row">
-          <div class="col-12">
-            <i class="fa fa-search"></i>
-            <input type="text" class="fda_ip_search" placeholder="Search by food/restaurant" required>
-          </div>
-        </div>
-      </section>
-      <!-- End Section Header Bar -->
-  
-      <!-- Start Section Body Part 1 -->
-  
-      <section id="fda_product_tile" class="col-12">
-  
-        <div class="row fda_food_row">
-          <div class="col-9">
-            <div class="food_tile active">
-              <img src="https://i.postimg.cc/yNkfyrnW/soy-sauce-chicken.jpg" alt="" class="fda_product_img">
-              <span class="food_name">Soy-Sauce Chicken</span>
-              <span class="food_detail">Served with Szechuan style rice, ginger scallion oil,and crispy noodles</span>
-              <ul id="food_meta">
-                <li>
-                  Calories
-                  <span>ALOT</span>
-                </li>
-                <li>
-                  Price
-                  <span><i class="fa fa-inr"></i>$5.50</span>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-sm btn-default">Order Now</button>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="nav-bg">
+        <ul class="nav-list">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="products.html">Prodcuts</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="registration.html">Registration</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<body>
+  <!-- resize it -->
+    <div class="container">
+        <section class="menu">
+					<h1>Our Featured Menu</h1>
+            <div class="menu-part">
+                <img src="images/crabby.jpg" alt="crabby">
+                <p class="menu-item">Kirsche küßt Mohn-Becher</p>
+                <p class="price">6.50</p>
+                <p class="description">Grau-Mohn, Joghurt-Kirscheis, Amarenakirschen mit Saft, Schlagobers und Hohlhippen</p>
             </div>
-          </div>
-          <div class="col-9">
-            <div class="food_tile">
-              <img src="https://i.postimg.cc/3RysJFc9/taiwanese-soup.jpg" alt="" class="fda_product_img">
-              <span class="food_name">Beef Noodle Soup</span>
-              <span class="food_detail"></span>
-              <ul id="food_meta">
-                <li>
-                  Calories
-                  <span>ALOT</span>
-                </li>
-                <li>
-                  Price
-                  <span><i class="fa fa-inr"></i>$3.50</span>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-sm btn-default">Order Now</button>
+            <div class="menu-part">
+                <img src="images/noodle-soup.jpg" alt="bild">
+                <p class="menu-item">Yin-Yang-Becher</p>
+                <p class="price">5.50</p>
+                <p class="description">Vanilleeis mit Vanillesauce und Obstsalat, Schokoladeeis mit Schokolade-Sauce und Schokokuchen, Schlagobers</p>
             </div>
-          </div>
-          <div class="col-9">
-            <div class="food_tile active">
-              <img src="https://i.postimg.cc/RFV0Pyqh/Xiao-Long-Bao.jpg" alt="" class="fda_product_img">
-              <span class="food_name">Xiao Long Bao</span>
-              <span class="food_detail"></span>
-              <ul id="food_meta">
-                <li>
-                  Calories
-                  <span>ALOT</span>
-                </li>
-                <li>
-                  Price
-                  <span><i class="fa fa-inr"></i>$5.50</span>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-sm btn-default">Order Now</button>
+            <div class="menu-part">
+                <img src="images/mussels.jpg" alt="bild">
+                <p class="menu-item">Raupe Nimmersatt-Becher</p>
+                <p class="price">5.50</p>
+                <p class="description">Schokolade-, Apfeleis mit doppelter Portion Schlagobers und einer Packung Hohlhippen </p>
             </div>
-          </div>
-          <div class="col-9">
-            <div class="food_tile">
-              <img src="https://i.postimg.cc/21QWnzsK/pav-bhaji.png" alt="" class="fda_product_img">
-              <span class="food_name">Orange Chicken</span>
-              <span class="food_detail">Lorem ipsum desciption iption</span>
-              <ul id="food_meta">
-                <li>
-                  Calories
-                  <span>ALOT</span>
-                </li>
-                <li>
-                  Price
-                  <span><i class="fa fa-inr"></i>$3.50</span>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-sm btn-default">Order Now</button>
+            <div class="menu-part">
+                <img src="images/orange chicken.jpg" alt="bild">
+                <p class="menu-item">Kirsche küßt Mohn-Becher</p>
+                <p class="price">6.50</p>
+                <p class="description">Grau-Mohn, Joghurt-Kirscheis, Amarenakirschen mit Saft, Schlagobers und Hohlhippen</p>
             </div>
-          </div>
-      </section>
-  
-      <!-- End Section Body Part 1 -->
-  
-      <!-- Start Section Body Part 2 -->
-  
-      <section class="fda_section_product_tile col-12">
-        <div class="row fda_title_row">
-          <div class="col-12">
-      </section>
-      <!-- End Section Body Part 2 -->
+            <div class="menu-part">
+                <img src="images/riblets.jpg" alt="bild">
+                <p class="menu-item">Yin-Yang-Becher</p>
+                <p class="price">7.50</p>
+                <p class="description">Vanilleeis mit Vanillesauce und Obstsalat, Schokoladeeis mit Schokolade-Sauce und Schokokuchen, Schlagobers</p>
+            </div>
+            <div class="menu-part">
+                <img src="images/soy-sauce-chicken.jpg" alt="bild">
+                <p class="menu-item">Raupe Nimmersatt-Becher</p>
+                <p class="price">6.50</p>
+                <p class="description">Schokolade-, Apfeleis mit doppelter Portion Schlagobers und einer Packung Hohlhippen </p>
+            </div>
+        </section>
     </div>
-  </div>
 </body>
 </html>
-

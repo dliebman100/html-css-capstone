@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 /*---------LOGIN PAGE---------*/
-body#login {
-  background-color:#32469c;
-  color:#fff;
+body{
+  background: url(https://i.ibb.co/Zgzv34L/colorful-2174045.png;);
+  font-family: 'Montserrat';
+  height: 100vh;
+  width: 100vw;
+  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/mussels.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
+
 .simple-login-container{
   width: 300px;
   max-width:100%;
@@ -10,6 +21,8 @@ body#login {
 }
 .simple-login-container h2{
   text-align: center;
+  font-weight: bold;
+  color: white;
 }
 .simple-login-container .btn-login{
   background-color:#FF5964;

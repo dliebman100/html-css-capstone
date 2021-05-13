@@ -14,10 +14,6 @@ header {
   background-attachment: fixed;
   position: relative;
 }
-/* .navbar-background {
-  display: inline-block;
-} */
-
 .hero-bg {
   position: absolute;
   top: 40%;
@@ -36,16 +32,38 @@ a {
   padding: 10px 15px;
 }
 .btn-full {
-  background-color: #32469c;
-  color: white;  
+  background: #32469c; 
+  width: 100%;
+  height: 35px;
+  border-radius: 15px; 
+  font-size: 15px;
+  font-family: 'Montserrat';
+   font-family: 'Montserrat';
+  color: #ffffff !important;
+  border: 0; 
+  cursor: pointer; 
+  color: #3e3d3d; 
 }
-#section.authentic {
+.btn-full:hover{
+  background:  #bd2d34; 
+  transition: .6s;
+}
+.btn-ghost:hover{
+  background:  #bd2d34; 
+  transition: .6s;
+}
+
+
+/*--------------------------------------*/
+/*FEATURES*/
+/*--------------------------------------*/
+/* .authentic {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-areas: 
       "dumpling content";
-}
-.right-column {
+} */
+#intro{
   height: 100vh;
   width: 100vw;
   background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/bg-plate.jpg");
@@ -54,10 +72,11 @@ a {
   background-attachment: fixed;
   position: relative;
 }
-
-/*--------------------------------------*/
-/*FEATURES*/
-/*--------------------------------------*/
+.intro-hello{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
 .row {
   width: 70%;
   margin-left: auto;
@@ -71,13 +90,13 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-.long-desc {
+/* .long-desc {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
   margin-bottom: 40px;
-}
+} */
 
 .box {
   box-sizing: border-box;
