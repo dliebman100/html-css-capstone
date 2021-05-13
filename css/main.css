@@ -42,15 +42,18 @@ a {
   color: #ffffff !important;
   border: 0; 
   cursor: pointer; 
-  color: #3e3d3d; 
+  color: #3e3d3d;
+  text-decoration: none; 
 }
 .btn-full:hover{
   background:  #bd2d34; 
   transition: .6s;
+  text-decoration:none;
 }
 .btn-ghost:hover{
   background:  #bd2d34; 
   transition: .6s;
+  text-decoration: none;
 }
 
 
@@ -165,9 +168,10 @@ h2 {
 /*--------------------------------------*/
 
 #testimonials {
-  background: linear-gradient(rgba(0,0,0,10), rgba(0,0,0,0));
-  background-size: cover;
-  color: #fff;
+  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/noodle-soup.jpg");
+  background-size: auto;
+  color: black;
+  font-weight: bold;
   background-attachment: fixed;
 }
 .testimonal h6{
@@ -228,6 +232,51 @@ input[type=submit] {
 input[type=checkbox] {
   margin:10px 5px 10px 0;
 }
+/*--------------------------------------*/
+/* FOOTER*/
+/*--------------------------------------*/
 
+footer {
+  background-color:#333;
+  padding:50px;
+  font-size:80%;
+}
+
+.footer-nav {
+  list-style:none;
+  float:left;
+}
+
+.footer-nav li,
+.social-links li {
+  display:inline-block;
+  margin-right:20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin:0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration:none;
+  border:0;
+  color:#888;
+  transition:color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color:#ddd;
+}
+
+footer p {
+  color:#888;
+  text-align:center;
+  margin-top:20px;
+}
 
 

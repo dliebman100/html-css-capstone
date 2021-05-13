@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-background: #0f0f0f;
+background: rgb(14, 13, 13);
 font-size: 16px;
 line-height: 1.5;
 font-family: 'Montserrat', Arial, sans-serif;
 color: antiquewhite;
+}
+section{
+  padding: 5em 2em;
 }
 .container {
 max-width: 1024px;
@@ -25,16 +28,18 @@ grid-column-gap: 10px;
 grid-template-areas:
 "img menu-item price"
 "img description .";
-margin-top: 10px;
-margin-bottom: 10px;
+margin-top: 1em;
+margin-bottom: 1em;
 align-items: top;
 }
+
 img {
 grid-area: img;
 width: 100%;
 min-width: 100px;
 height: auto;
 }
+
 .menu-item {
 grid-area: menu-item;
 font-weight: bold;

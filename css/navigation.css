@@ -1,14 +1,26 @@
 /* Navigation Bar */
+:root {
+  --primary-color: #007af3;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 .logo {
-  width: 20%;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+  /* width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  text-decoration: none; */
+span {
+    color: var(--primary-color);
+  }
 .nav-bg {
   background-color: rgba(0, 0, 0, 0);
   display: flex;
@@ -16,16 +28,19 @@
   position: sticky;
   cursor: pointer;
   top: 0%;
+  text-decoration: none;
 }
 .nav-list {
   display:flex;
   width: 0%;
   background-color: black;
   align-items:center;
+  text-decoration: none;
 }
 .nav-list li {
   list-style: none;
   padding: 26px 30px;
+  text-decoration: none;
 }
 .nav-list li a {
   text-decoration: none;
@@ -33,5 +48,9 @@
 }
 .nav-list li a:hover {
   color: red;
+  text-decoration: none;
+}
+mobile-menu {
+  cursor: pointer;
 }
 
