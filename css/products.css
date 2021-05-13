@@ -21,7 +21,6 @@ grid-gap: 1.5rem;
 display: grid;
 grid-template-columns: 150px minmax(200px 280px) 60px;
 grid-template-rows: autofill(30px 1fr);
-/* grid-row-gap: 10px;*/
 grid-column-gap: 10px;
 grid-template-areas:
 "img menu-item price"
