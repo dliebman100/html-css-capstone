@@ -2,44 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Simple.Eats</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="navigation-bar.html"> -->
 </head>
-<body>
 
-    <div class="container">
-      <nav class="navbar">
-          <ul class="nav-links">
+<body>
+<!-- Navbar -->
+    <header>
+      <nav>
+        <div class="nav-bg">
+          <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="registration.html">
-              <button>Registration</button>
-            </a></li>
+            <li><a href="registration.html">Registration</a></li>
           </ul>
+        </div>
       </nav>
 
-      <section class="showcase">
-        <header class="simple-head">
-          <div class="hero-bg">
-            <h1>We are <span class="logo">Simple.Eats</span><br> A better eating experience</h1>
-            
-            <p>Food, drinks and desserts available for delivery or pickup using our website or app</p>
-          </div>
-        </header>
-      </section>
-
-      <!-- Second picture -->
-    <section class="showcase2">
-      <header class="simple-head2">
+<!-- Hero page -->
       <div class="hero-bg">
+        <h1>We are Simple.Eats<br> A better eating experience.</h1>
+        <a class="btn-full" href="products.html">I'm hungry</a>
+        <a class="btn-ghost" href="registration.html">Sign me up</a>
+      </div>  
+    </header>
+
+<!-- Second picture -->
+    <section id="intro">
+      <div class="intro-hello">
         <h1>We know you’re always busy. So let us take care of that!</h1>
       </div>
-    </header>
-  </section>
+    </section>
 
 <!-- Features -->
     <section id="features">
@@ -214,17 +212,23 @@
         </form>
       </div>
     </section>
-
-      <footer class="footer">
-          <ul class="footer-links">
-              <li><a href="#">Terms of Privacy</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
           </ul>
-          <li>&copy;2020</li>
-          </footer>
-    </div>
-
-</body>
+        </div>
+      <div class="row">
+        <p>
+          Copyright &copy; 2021 by Simple.Eats. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
+
+

@@ -7,7 +7,7 @@ body{
   font-family: 'Montserrat';
   height: 100vh;
   width: 100vw;
-  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/orange chicken.jpg");
+  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/orange-chicken.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

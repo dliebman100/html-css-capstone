@@ -1,282 +1,326 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
+*{
+    box-sizing: border-box;
 }
 
-header {
-  height: 100vh;
-  width: 100vw;
-  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/noodle-soup.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #922727;
+    background-image: linear-gradient(135deg, #5e0c10 0%, #686981 100%);
+
 }
-.hero-bg {
-  position: absolute;
-  top: 40%;
-  left: 10%;
+
+ul{
+    list-style: none;
 }
-h1 {
-  color: #eee;
-  font-size: 40px;
+
+a{
+    text-decoration: none;
 }
-a {
-  text-decoration: none;
-  margin-right: 30px;
-  color: white;
-  border: 1px solid #32469c;
-  border-radius: 25px;
-  padding: 10px 15px;
+
+.container{
+    max-width: 1600px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
-.btn-full {
-  background: #32469c; 
-  width: 100%;
-  height: 35px;
-  border-radius: 15px; 
-  font-size: 15px;
-  font-family: 'Montserrat';
-   font-family: 'Montserrat';
-  color: #ffffff !important;
-  border: 0; 
-  cursor: pointer; 
-  color: #3e3d3d;
-  text-decoration: none; 
+
+.navbar{
+    height: 8vh;
+    background-color: #242E4C;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-.btn-full:hover{
-  background:  #bd2d34; 
-  transition: .6s;
-  text-decoration:none;
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
 }
-.btn-ghost:hover{
-  background:  #bd2d34; 
-  transition: .6s;
-  text-decoration: none;
+
+.navbar .nav-links li a{
+    color: rgb(233, 233, 233);
+    padding: 0 1.5rem;
+}
+
+.navbar .nav-links button{
+    border: none;
+    background-color: #bd2d34;
+    color: rgb(233, 233, 233);
+    padding: 0.55rem 1.6rem;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-links i{
+    margin-left: 0.2rem;
+}
+.simple-head{
+    background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+.logo {
+        color: yellow;
+}
+.logo-sec{
+        color: #32469c;
+}
+    
+.showcase{
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),url("../images/noodle-soup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+}
+.showcase2{
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),url("../images/bg-plate.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+}
+.showcase h1{
+    width: 40%;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.showcase p{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.showcase .search{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.showcase .search input, button{
+    border: 1px solid #dedede;
+    padding: 0.75rem 1rem;
+}
+
+.showcase .search button{
+    background-color: #FF6144;
+    color: #dedede;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+input[type = 'text']{
+    width: 350px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    outline: none;
 }
 
 
 /*--------------------------------------*/
 /*FEATURES*/
 /*--------------------------------------*/
-/* .authentic {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-areas: 
-      "dumpling content";
-} */
 #intro{
-  height: 100vh;
-  width: 100vw;
-  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/bg-plate.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
-}
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/bg-plate.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
 .intro-hello{
-  position: absolute;
-  top: 40%;
-  left: 10%;
-}
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
 .row {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-#features {
-  margin-bottom: 40px;
-}
-h2 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
-}
-/* .long-desc {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-  margin-bottom: 40px;
-} */
-
-.box {
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-}
-.box h4 {
-  text-align: center;
-  height: 80px;
-}
-
-.icons {
-  font-size: 30px;
-  float: left;
-  color: #32469c;
-}
-
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #features {
+    margin-bottom: 40px;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .box {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  .box h4 {
+    text-align: center;
+    height: 80px;
+  }
+  
+  .icons {
+    font-size: 30px;
+    float: left;
+    color: #32469c;
+  }
+  
 /*--------------------------------------*/
 /*MEALS IMG*/
 /*--------------------------------------*/
-
-#meals {
-  margin-top: 40px;
-}
-.meal-gallery {
-  padding: 0;
-}
-
-.picbox {  
-  width: 20%;
-  float: left;
-  overflow: hidden;
-}
-
-.picbox img{
-  height: 150px;;
-  width: 100%;
-  transform: scale(1.15);  
   
-}
-#how-it-works h2 {
-  margin-top: 40px;
-}
-#how-it-works img {
-  width: 130%;
-}
-
-.steps {
-  font-weight: 400;
-}
-
-.steps div {
-  float: left;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #32469c;
-  border-radius: 100%;
-  text-align: center;
-  padding-top: 10px;
-  color: #32469c;
-  font-weight: 400;
-  margin-right: 30px;
-}
+  #meals {
+    margin-top: 40px;
+  }
+  .meal-gallery {
+    padding: 0;
+  }
+  
+  .picbox {  
+    width: 20%;
+    float: left;
+    overflow: hidden;
+  }
+  
+  .picbox img{
+    height: 150px;;
+    width: 100%;
+    transform: scale(1.15);  
+    
+  }
+  #how-it-works h2 {
+    margin-top: 40px;
+  }
+  #how-it-works img {
+    width: 130%;
+  }
+  
+  .steps {
+    font-weight: 400;
+  }
+  
+  .steps div {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #32469c;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: #32469c;
+    font-weight: 400;
+    margin-right: 30px;
+  }
 /*--------------------------------------*/
 /*TESTIMONIALS*/
 /*--------------------------------------*/
+  
+  #testimonials {
+    background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/noodle-soup.jpg");
+    background-size: auto;
+    color: black;
+    font-weight: bold;
+    background-attachment: fixed;
+  }
+  .testimonal h6{
+    display: inline-block;
+    transform: translate(0, -50px);
+  }
+  .user {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  #form {
+    margin-top: 40px;
+  }
+  
+  iframe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+ 
+  /*--------------------------------------*/
+  /*REGISTRATION FORM */
+  /*--------------------------------------*/
+  .contact-form {
+    width:100%;
+    margin:0 auto;
+  }
+  input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 13px;
+    border: 1px solid #ccc;
+  }
+  textarea {
+    height:100px;
+  }
+  input[type=submit] {
+    cursor:pointer;
+  }
+  input[type=checkbox] {
+    margin:10px 5px 10px 0;
+  }
 
-#testimonials {
-  background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/noodle-soup.jpg");
-  background-size: auto;
-  color: black;
-  font-weight: bold;
-  background-attachment: fixed;
-}
-.testimonal h6{
-  display: inline-block;
-  transform: translate(0, -50px);
-}
-.user {
-  border-radius: 100%;
-  height: 100px;
-  width: 100px;
-  float: left;
-}
-#form {
-  margin-top: 40px;
-}
-
-iframe {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*--------------------------------------*/
-/*NAVIGATION*/
-/*--------------------------------------*/
-
-nav ul {
-  float: right;
-  margin-top: 10px;  
-}
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-nav a {
-  color: white;
-  border: none;
-  text-decoration: none;
-}
-/*--------------------------------------*/
-/*REGISTRATION FORM */
-/*--------------------------------------*/
-.contact-form {
-  width:100%;
-  margin:0 auto;
-}
-input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 13px;
-  border: 1px solid #ccc;
-}
-textarea {
-  height:100px;
-}
-input[type=submit] {
-  cursor:pointer;
-}
-input[type=checkbox] {
-  margin:10px 5px 10px 0;
-}
-/*--------------------------------------*/
-/* FOOTER*/
-/*--------------------------------------*/
-
-footer {
-  background-color:#333;
-  padding:50px;
-  font-size:80%;
+/* Footer */
+.footer{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-nav {
-  list-style:none;
-  float:left;
+.footer-links{
+    display: flex;
 }
 
-.footer-nav li,
-.social-links li {
-  display:inline-block;
-  margin-right:20px;
+.footer-links li a{
+    padding-right: 1.4rem;
+    color: #777;
+    font-size: 0.9rem;
 }
 
-.footer-nav li:last-child,
-.social-links li:last-child {
-  margin:0;
+.footer li{
+    color: #777;
+    list-style: none;
+    font-size: 0.9rem;
 }
 
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a:link,
-.social-links li a:visited {
-  text-decoration:none;
-  border:0;
-  color:#888;
-  transition:color 0.2s;
-}
 
-.footer-nav li a:hover,
-.footer-nav li a:active {
-  color:#ddd;
-}
 
-footer p {
-  color:#888;
-  text-align:center;
-  margin-top:20px;
-}
+
+
+
+
 
 
